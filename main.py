@@ -23,14 +23,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6975682316:AAH4eYOJzfbetgwqYXi4Zf5SAA1KDu5z9Og",
-             api_id=20463500,
-             api_hash= "5db9bc6439f7b43daa75689edf65b431")
+             bot_token= "6812832796:AAHyTGXTAWapbLKZG1Z5JHcclT42MpX3tCs",
+             api_id=25540851,
+             api_hash= "a53657535cc2ebffcf0edfc044d5afb4")
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /pip")
+    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY Hexa_Talk [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /pip")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -169,8 +169,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.mkv\n**Batch Name :** {b_name}\n\n**Downloaded by : {CR}**'
-                cc1 = f'** {str(count).zfill(3)}.** {name1} 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.pdf \n**Batch Name :**{b_name}\n\n**Downloaded by : {CR}**'
+                cc = f'** {str(count).zfill(3)}.** {name1} ({res}) Hexa_Talk.mkv\n**Batch Name :** {b_name}\n\n**Downloaded by : {CR}**'
+                cc1 = f'** {str(count).zfill(3)}.** {name1} Hexa_Talk.pdf \n**Batch Name :**{b_name}\n\n**Downloaded by : {CR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -211,7 +211,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🔰Done 🅿🅷🅴🅾🅽🅸🆇🔰")
+    await m.reply_text("Done ✅")
 
 
 bot.run()
