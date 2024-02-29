@@ -23,7 +23,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7045533154:AAFmam5oYJ0ml8fhv0Q7LD3v-N0GHc4lRCs",
+             bot_token= "6850006816:AAHIdIJ-mLmpcac6LKNUql2Z8XeEIhBi_ds",
              api_id=29509604,
              api_hash= "7543d780627ea4a25da5fe5696167440")
 
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **bot made by Hexa_Talk ❤️**")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **Bot Made By Hexa_Talk ❤️**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
