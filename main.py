@@ -30,7 +30,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY Hexa_Talk [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /pip")
+    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY Hexa_Talk [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Hexa")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **bot made by TIGER ❤️**")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **bot made by Hexa_Talk ❤️**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
