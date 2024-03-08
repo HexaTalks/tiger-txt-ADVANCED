@@ -14,7 +14,7 @@ LOG = -1002039122754
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6333211826").split()):
+    for x in (os.environ.get("ADMINS", "6804641253").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
